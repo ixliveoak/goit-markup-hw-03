@@ -72,10 +72,15 @@ body {
 
 /* =============== HEADER ====================*/
 .page-header {
+  padding: 24px 0;
 box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 
-.container, 
 .page-navigation {
   display: flex;
   align-items: center;
@@ -84,7 +89,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 .logo {
-  margin: 24px;
   margin-right: 77px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -101,7 +105,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 24px;
 
 }
 .menu-link {
@@ -125,15 +129,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 /* ================ HERO =======================*/
 
 .hero {
-  padding: 192px auto;
+  padding: 192px 0;
   text-align: center;
   background: var(--primary-text-color);
 }
-.section {
-  padding: 120px;
-}
+
+
 .hero-title {
-  width: 492px;
+  width: 500px;
   margin: 0 auto 48px;
   text-align: center;
   font-weight: 600;
@@ -174,7 +177,18 @@ width: 264px;
   gap: 24px;
 }
 /* ============= /ABOUT =====================*/
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border:0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: insert (100%);
+  clip: rect (0 0 0 0);
+  overflow: hidden;
+}
 /* ============= SERVICES =====================*/
 
 .section-title {
@@ -188,7 +202,8 @@ text-align: center;
 }
 
 .menu-item {
-
+padding-bottom: 24px;
+padding-top: 24px;
 }
 /* ============= /SERVICES =====================*/
 
@@ -196,8 +211,15 @@ text-align: center;
 
 .team {
   background-color: var(--light-background);
-
 }
+
+.menu-items {
+  padding-bottom: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name {
 margin-top: 32px;
 margin-bottom: 8px;
@@ -208,7 +230,7 @@ color: var(--primary-text-color);
 text-align: center;
 }
 .team-position {
-  margin-bottom: 32px;
+
   text-align: center;
 
   line-height: 1.5;
@@ -225,6 +247,11 @@ text-align: center;
 .footer {
   padding: 100px 0;
   background: var(--primary-text-color);
+}
+.footer .logo {
+  margin-right: 0;
+  margin-bottom: 16px;
+
 }
 .logo-web-text-footer {
   font-family: 'Raleway', sans-serif;
